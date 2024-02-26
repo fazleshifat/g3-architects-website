@@ -14,6 +14,8 @@
     font-size: 20px;
     font-weight: 600;
     margin: 30px 0;
+    cursor: pointer;
+
 }
 
 * {
@@ -25,14 +27,14 @@
 
 header {
     background: rgba(255, 144, 14, 0.10);
-    /*  */
+    padding: 50px 240px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 240px;
+
 }
 
 nav ul {
@@ -82,17 +84,98 @@ nav li a {
     line-height: 26px;
 }
 
-.banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.banner-img{
+.banner-img {
     display: flex;
     justify-content: center;
 }
 
-.banner-img img{
+.banner-img img {
     width: 1200px;
+}
+
+
+
+/* responsive styles for mobile view */
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 30px 0;
+
+    }
+
+    .nav ul li {
+        text-align: center;
+        padding-top:20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    /* banner section related styles */
+
+
+
+
+    .banner-title {
+        padding:30px;
+        font-size: 55px;
+        font-weight: 700;
+
+    }
+
+    .banner-description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+}
+
+/* responsive styles for tablet view */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 30px 0;
+
+    }
+
+    .nav ul li {
+        text-align: center;
+        padding-top:20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    /* banner styles for mobile*/
+
+
+
+
+    .banner-title {
+        padding:30px;
+        font-size: 55px;
+        font-weight: 700;
+
+    }
+
+    .banner-description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
 }
