@@ -1,0 +1,46 @@
+/* responsive styles for tablet view */
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav
+     {
+        flex-direction: column;
+
+    }
+
+    .nav ul li {
+        text-align: center;
+        padding-top:20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    /* banner styles for mobile*/
+
+
+
+
+    .banner-title {
+        padding:30px;
+        font-size: 55px;
+        font-weight: 700;
+
+    }
+
+    .banner-description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+
+    /* teams section styles for tablet */
+
+    
+
+}
